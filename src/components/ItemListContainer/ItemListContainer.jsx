@@ -7,7 +7,7 @@ const ItemListContainer = ({greeting,products,productsCounter}) => {
   <div>
       <h1>{greeting}</h1>
       <h2>{products}</h2>
-      <ItemCounter productsCounter={productsCounter}/>
+      <ItemCounter productsCounter={productsCounter} initialValue={1} stock={13}/>
       </div>
   )
 }
