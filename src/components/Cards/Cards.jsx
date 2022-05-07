@@ -7,7 +7,7 @@ function Cards() {
     // const {greeting, products, productsCounter} = props (Método anterior, no se veía el total counter en el HTML)
     const seeMore = () => {
       setShow (!show)
-      console.log(show);
+      console.log("Info was clicked");
     }
   return (
     <Card style={{ width: '15rem' }}>
