@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
         <Header/>
-          <ItemListContainer greeting="Welcome To Fitnesty" products= {products} productsCounter={productsCounter}/>
+          <ItemListContainer tittle="Welcome To Fitnesty" products= {products} productsCounter={productsCounter}/>
           </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { toast } from "react-toastify"
+import {Button} from "react-bootstrap"
 
 function ItemCounter ({initialValue, stock}) {
 //UseState se usa siempre con CONST**
@@ -36,14 +37,11 @@ const addOnCart = () => {
 
   return (
     <div>
-      <h3>Whey Protein Isolate</h3>
-      <img src="https://http2.mlstatic.com/D_NQ_NP_979511-MLA31009661542_062019-O.webp" style={{width:'10rem'}}></img>
-      <br/>
-        <button onClick={substract}>-</button>
+        <Button variant='outline-primary' onClick={substract}>-</Button>
         <span>{amount} Unidades</span>
-        <button onClick={addUpp}>+</button>
+        <Button variant='outline-primary' onClick={addUpp}>+</Button>
         <br/>
-        <button onClick={addOnCart}>Add on Cart</button>
+        <Button variant='success' onClick={addOnCart}>Add on Cart</Button>
     </div>
   )
 }
