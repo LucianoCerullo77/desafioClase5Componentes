@@ -1,13 +1,13 @@
 import React from 'react'
 import ItemCounter from '../ItemCounter/ItemCounter'
 
-const ItemListContainer = (props) => {
-    const {greeting, products, productsCounter} = props
+const ItemListContainer = ({greeting,products,productsCounter}) => {
+    // const {greeting, products, productsCounter} = props (Método anterior, no se veía el total counter en el HTML)
   return (
   <div>
       <h1>{greeting}</h1>
       <h2>{products}</h2>
-      <ItemCounter ItemCounter={productsCounter}/>
+      <ItemCounter productsCounter={productsCounter}/>
       </div>
   )
 }

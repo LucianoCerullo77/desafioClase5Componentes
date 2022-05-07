@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function ItemCounter ({productsCounter}) {
+  const [] = useState()
   return (
     <div>
         <p>{productsCounter}</p>
