@@ -34,6 +34,12 @@ const addOnCart = () => {
 }
 
 
+React.useEffect(() => {
+  console.log(`${amount} Selected items were changes in stock`);
+
+},[addOnCart])
+
+
 
   return (
     <div>
