@@ -4,12 +4,12 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 function App() {
   const products = "Product List"
-    const productsCounter = "Total Counter = 1"
+    const productsCounter = "Total Count = "
   return (
     <div className="App">
         <Header/>
-        <ItemListContainer greeting="Example text" products= {products} productsCounter={productsCounter}/>
-    </div>
+          <ItemListContainer greeting="Welcome To Fitnesty" products= {products} productsCounter={productsCounter}/>
+          </div>
   );
 }
 
